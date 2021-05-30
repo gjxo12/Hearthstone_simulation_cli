@@ -2,7 +2,6 @@
   - Python 3.8
   ...
 
-# Hearthstone_simulation_cli
 ## 전장 시뮬레이터 CLI
 1. 카드 덱 가져오기 (https://hearthstonejson.com/docs/cards.html)
   - 하수인 정보만 저장
