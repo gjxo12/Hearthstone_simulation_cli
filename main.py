@@ -1,23 +1,8 @@
-import json
-import os
 import click
 import sys
 from pyfiglet import Figlet
-from clint.textui import puts, colored, indent
+# from clint.textui import puts, colored, indent
 
-
-def battle_ground_card():
-    card_data = list()
-    dirpath = os.path.dirname(__file__)
-    filepath = os.path.join(dirpath, "card_info/data.json")
-    f = open(filepath, "r", encoding='utf-8')
-    data = json.loads(f.read())
-    for i in data:
-        if i['type'] == 'MINION':
-            card_data.append(i)
-    for i in card_data:
-        print(i)
-    print(len(card_data))
 
 #필요한 내용: 내 미니언수, 상대 미니언 수, -> 사용할 카드? (name으로 받기?), 영웅 선택?(구현 매우 나중에)
 
